@@ -3,8 +3,8 @@
 }
 
 .logoWorking {
-  animation: App-logo-working-spin infinite 5s linear alternate;
-  height: 40vmin;
+  animation: App-logo-working-spin infinite 3s linear alternate;
+  height: 27vmin;
   pointer-events: none;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #feda36;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,21 +30,33 @@
 }
 
 @keyframes App-logo-working-spin {
-  from {
+  0% {
     transform: rotate(0deg) scale(0);
   }
-  to {
+  80% {
+    transform: rotate(360deg) scale(1);
+  }
+  100% {
     transform: rotate(360deg) scale(1);
   }
 }
 
 @keyframes App-logo-notWorking-spin {
-  from {
-    transform: scale(1);
-  }
-  to {
+  0% {
     transform: scale(0);
   }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+figure {
+  display: table-cell;
+  width: 400px;
+  padding-bottom: 30px;
 }
 
 .buttonWork {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 import Quotes from "./Quotes";
@@ -22,14 +22,16 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className={logoReact} alt="logo" />
-          <h1 className="App-title">Simpsons Quotes</h1>
+          <h1 className="App-title">Simpson Quotes</h1>
         </header>
-        <h2>Is Homer Working ?</h2>
-        <button className="buttonWork" onClick={this.handleClick}>
-          {homer.toUpperCase()}
-        </button>
-        {/* <Lamp on /> */}
-        <Quotes />
+        <div className="container">
+          <h2>Is Homer Working ?</h2>
+          <button className="buttonWork" onClick={this.handleClick}>
+            {homer.toUpperCase()}
+          </button>
+          {/* <Lamp on /> */}
+          <Quotes />
+        </div>
       </div>
     );
   }
