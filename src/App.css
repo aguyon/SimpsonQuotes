@@ -3,13 +3,13 @@
 }
 
 .logoWorking {
-  animation: App-logo-working-spin infinite 3s linear alternate;
+  animation: App-logo-working infinite 3s linear alternate;
   height: 27vmin;
   pointer-events: none;
 }
 
 .logoNotWorking {
-  animation: App-logo-notWorking-spin infinite 5s linear alternate;
+  animation: App-logo-notWorking infinite 5s linear alternate;
   height: 40vmin;
   pointer-events: none;
 }
@@ -29,7 +29,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-working-spin {
+@keyframes App-logo-working {
   0% {
     transform: rotate(0deg) scale(0);
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@keyframes App-logo-notWorking-spin {
+@keyframes App-logo-notWorking {
   0% {
     transform: scale(0);
   }
@@ -55,7 +55,7 @@
 
 figure {
   display: table-cell;
-  width: 400px;
+  width: 25%;
   padding-bottom: 30px;
 }
 
@@ -70,6 +70,41 @@ figure {
 }
 
 .buttonWork:focus {
+  outline: none !important;
+  border: 2px solid rgb(226, 185, 0);
+  border-radius: 10px;
+}
+
+.btnMarge {
+  background-color: #FEDA36;
+  width: 200px;
+  height: 60px;
+  border: 2px solid rgb(226, 185, 0);
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.btnMarge:focus {
+  outline: none !important;
+  border: 2px solid rgb(226, 185, 0);
+  border-radius: 10px;
+}
+
+.btnCount {
+  background-color: #FEDA36;
+  width: 80px;
+  height: 40px;
+  border: 2px solid rgb(226, 185, 0);
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin: 5px;
+}
+
+.btnCount:focus {
   outline: none !important;
   border: 2px solid rgb(226, 185, 0);
   border-radius: 10px;
