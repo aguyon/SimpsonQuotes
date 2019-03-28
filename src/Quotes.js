@@ -4,8 +4,7 @@ import Quote from "./Quote";
 // src/Quotes.js
 const quotes = [
   {
-    quote:
-      "Facts are meaningless. You could use facts to prove anything that's even remotely true.",
+    quote: "Facts are meaningless. You could use facts to prove anything that's even remotely true.",
     character: "Homer Simpson",
     image: "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FHomerSimpson.png?1497567511939"
   },
@@ -20,18 +19,20 @@ const quotes = [
     image: "https://i.postimg.cc/y8xQFbJ7/ralph.png"
   },
   {
-    quote:
-      "Hello, Simpson. I'm riding the bus today because Mother hid my car keys to punish me for talking to a woman.",
+    quote: "Hello, Simpson. I'm riding the bus today because Mother hid my car keys to punish me for talking to a woman.",
     character: "Principal Skinner",
     image: "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FSeymourSkinner.png?1497567511460"
   }
 ];
 
+
 const Quotes = () => (
   <div>
-    {quotes.map(quote => (
-      <Quote quote={quote.quote} image={quote.image} character={quote.character} />
-    ))}
+    {
+      quotes.map(quote => (
+        <Quote quote={quote.quote} image={quote.image} character={quote.character} />
+      ))
+    }
   </div>
 );
 

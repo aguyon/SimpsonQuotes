@@ -4,7 +4,7 @@
 
 .logoWorking {
   animation: App-logo-working infinite 3s linear alternate;
-  height: 27vmin;
+  height: 40vmin;
   pointer-events: none;
 }
 

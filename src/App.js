@@ -5,31 +5,37 @@ import './App.css';
 
 import Quotes from "./Quotes";
 // import Lamp from "./Lamp";
+import Form from "./Form"
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       working: true,
-      show: true,
-      count: 0
+      show: false,
+      count: 0,
+      inputValueH1: ''
     };
   }
+
   handleClick = () => {
     this.setState({ working: !this.state.working });
   };
+
   showMarge = () => {
     this.setState({ show: !this.state.show });
   };
+
   incrementCounter = (increment) => {
     const count = this.state.count + increment;
-    if(count >= 0) { this.setState({count}) }
+    if (count >= 0) { this.setState({ count }) }
   };
+
   render() {
     const homer = this.state.working ? 'Working' : 'Not Working';
     const logoReact = this.state.working ? 'logoWorking' : 'logoNotWorking';
     const marge = this.state.show ? 'Hide' : 'Right Here';
-    
+
     return (
       <div className="App">
         <header className="App-header">
@@ -37,21 +43,21 @@ class App extends Component {
           <h1 className="App-title">Simpson Quotes</h1>
         </header>
 
-        <h2>Compteur : { this.state.count }</h2>
-          <button className="btnCount" onClick={() => this.incrementCounter(1)}>
-            Plus
+        <h2>Compteur : {this.state.count}</h2>
+        <button className="btnCount" onClick={() => this.incrementCounter(1)}>
+          Plus
           </button>
-          <button className="btnCount" onClick={() => this.incrementCounter(-1)}>
-            Moins
+        <button className="btnCount" onClick={() => this.incrementCounter(-1)}>
+          Moins
           </button>
 
         <h2>Is Homer Working ?</h2>
-          <button className="buttonWork" onClick={this.handleClick}>
-            {homer.toUpperCase()}
-          </button>
+        <button className="buttonWork" onClick={this.handleClick}>
+          {homer.toUpperCase()}
+        </button>
 
         {/* <Lamp on /> */}
-
+        <Form />
         <Quotes />
 
         <h2>And Marge, where is she ?</h2>
