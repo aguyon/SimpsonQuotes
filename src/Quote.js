@@ -1,6 +1,6 @@
 import React from "react";
 
-const Quote = ({ quote, character, image, index }) => (
+const Quote = ({ quote, character, image }) => (
     <figure>
         <img src={image} alt={character} />
         <figcaption>

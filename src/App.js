@@ -13,8 +13,7 @@ class App extends Component {
     this.state = {
       working: true,
       show: false,
-      count: 0,
-      inputValueH1: ''
+      count: 0
     };
   }
 
