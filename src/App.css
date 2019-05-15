@@ -60,12 +60,12 @@ figure {
 }
 
 .buttonWork {
-  background-color: #FEDA36;
-  width: 200px;
+  background-color: #feda36;
+  width: 230px;
   height: 60px;
   border: 2px solid rgb(226, 185, 0);
   border-radius: 10px;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 900;
 }
 
@@ -76,7 +76,7 @@ figure {
 }
 
 .btnMarge {
-  background-color: #FEDA36;
+  background-color: #feda36;
   width: 200px;
   height: 60px;
   border: 2px solid rgb(226, 185, 0);
@@ -93,7 +93,7 @@ figure {
 }
 
 .btnCount {
-  background-color: #FEDA36;
+  background-color: #feda36;
   width: 80px;
   height: 40px;
   border: 2px solid rgb(226, 185, 0);

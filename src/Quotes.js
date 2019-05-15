@@ -1,7 +1,6 @@
 import React from "react";
 import Quote from "./Quote";
 
-// src/Quotes.js
 const quotes = [
   {
     quote: "Facts are meaningless. You could use facts to prove anything that's even remotely true.",
